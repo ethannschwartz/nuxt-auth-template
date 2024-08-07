@@ -12,6 +12,15 @@ export default defineNuxtConfig({
   site: {
     // url: "enter-site-url-here ",
   },
+  supabase: {
+    redirectOptions: {
+      login: '/login',
+      callback: '/confirm',
+      include: undefined,
+      exclude: ['/'],
+      cookieRedirect: false,
+    }
+  },
   app: {
     head: {
       meta: [
@@ -27,6 +36,8 @@ export default defineNuxtConfig({
     "vue3-carousel-nuxt",
     "@nuxtjs/sitemap",
     "@nuxt/ui",
-    "@nuxt/image"
+    "@nuxt/image",
+    "@nuxtjs/supabase",
+    "@nuxtjs/google-fonts"
   ],
 })
