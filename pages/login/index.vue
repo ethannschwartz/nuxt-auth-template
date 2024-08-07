@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center justify-center w-screen h-screen bg-gradient-to-b from-indigo-100 to-white">
+  <div class="flex items-center justify-center w-screen h-screen">
     <div class="flex flex-col gap-3 w-full max-w-sm p-6 bg-white rounded-xl shadow-lg">
-      <h1 class="font-bold text-black">Log in</h1>
+      <h1 class="text-2xl font-bold text-black">Log in</h1>
       <div>
         <UInput
             placeholder="Email"
